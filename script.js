@@ -16,9 +16,9 @@ $(document).ready(
     }
 )
 
-<<<<<<< HEAD
 
-=======
+
+
 /*Navigationsmenu - transparent før scroll */
 
 $(document).ready(function () {
@@ -32,4 +32,4 @@ $(document).ready(function () {
         }
     });
 });
->>>>>>> frolovsavova/master
+
