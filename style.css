@@ -266,6 +266,12 @@
                                         display: block;
                                     }
 
+                                    /*SMYKKER GALLERI */
+
+.post img{
+    width: 100%;
+}
+
                                     /*DESKTOP MEDIA QUERY*/
                                     @media (min-width: 1024px) {
                                         header nav ul li.active ul {
