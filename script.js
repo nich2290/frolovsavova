@@ -16,6 +16,9 @@ $(document).ready(
     }
 )
 
+
+
+
 /*Navigationsmenu - transparent før scroll */
 
 $(document).ready(function () {
@@ -29,3 +32,4 @@ $(document).ready(function () {
         }
     });
 });
+
