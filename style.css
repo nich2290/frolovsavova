@@ -21,7 +21,7 @@
                                         width: 100%;
 
                                         box-sizing: border-box;
-                                        background: transparent;
+
                                         z-index: 10;
 
                                     }
@@ -123,6 +123,16 @@
                                         height: 3px;
                                         margin: 5px;
                                         transition: all 0.3s ease;
+                                    }
+
+                                    .navbar {
+                                        background-color: transparent;
+                                        transition: 0.5s ease;
+                                    }
+
+
+                                    .solid {
+                                        background-color: rgba(48, 65, 93, 0.9);
                                     }
 
                                     /*NAVIGATION SLUT*/
