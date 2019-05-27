@@ -395,6 +395,24 @@
 
 
                                         }
+                                        /*SMYKKER GALLERI*/
+
+                                        .posts {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                                            grid-template-rows: 1fr 1fr;
+                                            margin: 5rem;
+                                        }
+                                        .post {
+
+                                            padding: 1rem;
+                                            border: 0.5px solid lightgrey;
+                                            margin: 0.5rem;
+                                            background-color: white;
+                                        }
+                                        .post h2 {
+                                            text-align: center;
+                                        }
                                     }
 
                                     @media (max-width: 860px) {

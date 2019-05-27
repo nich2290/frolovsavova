@@ -19,7 +19,7 @@ $(document).ready(
 
 
 
-/*Navigationsmenu - transparent før scroll */
+        /*Navigationsmenu - transparent før scroll */
 
 $(document).ready(function () {
     // Transition effect for navbar

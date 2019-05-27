@@ -11,7 +11,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
 </head>
+<style>
+    .navbar {
+        background-color: rgba(48, 65, 93, 0.9);
+    }
 
+    </style>
 <body>
 
     <header class="navbar">
@@ -62,6 +67,7 @@
             <template>
 
         <section class="post">
+           <h2></h2>
             <div>
                 <img class="billede">
             </div>
@@ -131,12 +137,15 @@
                 //cloneNode skaber en kopi af "template".
                 let klon = temp.cloneNode(true).content;
                 console.log(post.billede);
-
+                klon.querySelector("h2").innerHTML = post.title.rendered;
                 klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector(".pris").innerHTML = post.pris;
-                klon.querySelector(".kort").innerHTML = post.kort;
+                klon.querySelector(".kort").innerHTML = post.beskrivelse;
                 //Sender klonen retur til vores destination "posts" og processen gentages.
                 dest.appendChild(klon);
+
+
+
             })
 
 
