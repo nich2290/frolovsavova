@@ -35,6 +35,11 @@
                                         font-weight: bold;
                                     }
 
+                                    .logo a {
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+
                                     header nav {
                                         float: right;
                                     }
