@@ -1,379 +1,458 @@
                                     /************ GENERELT ***********/
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-color: #FFFAF0;
-  background-attachment: fixed;
-  background-position: center;
-}
+                                    body {
+                                        margin: 0;
+                                        padding: 0;
+                                        font-family: sans-serif;
+                                        background-color: #FFFAF0;
+                                        background-attachment: fixed;
+                                        background-position: center;
+                                    }
 
-a {
-  /* color: white; */
-}
+                                    a {
+                                        /* color: white; */
+                                    }
+
                                     /**********NAVIGATION ***********/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0 100px;
-  width: 100%;
+                                    header {
+                                        position: fixed;
+                                        top: 0;
+                                        left: 0;
+                                        padding: 0 100px;
+                                        width: 100%;
 
-  box-sizing: border-box;
-  background: transparent;
-    z-index: 10;
+                                        box-sizing: border-box;
+                                        background: transparent;
+                                        z-index: 10;
 
-}
+                                    }
 
-header .logo {
-  color: #fff;
-  height: 50px;
-  line-height: 50px;
-  font-size: 24px;
-  float: left;
-  font-weight: bold;
-}
+                                    header .logo {
+                                        color: #fff;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        font-size: 24px;
+                                        float: left;
+                                        font-weight: bold;
+                                    }
 
-header nav {
-  float: right;
-}
+                                    header nav {
+                                        float: right;
+                                    }
 
-header nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+                                    header nav ul {
+                                        margin: 0;
+                                        padding: 0;
+                                        display: flex;
+                                    }
 
-header nav ul li {
-  list-style: none;
-  position: relative;
-}
+                                    header nav ul li {
+                                        list-style: none;
+                                        position: relative;
+                                    }
 
-header nav ul li.sub-menu:before {
-  content: '\f078';
-  font-family: fontAwesome;
-  position: absolute;
-  line-height: 50px;
-  color: #fff;
-  right: 3px;
-}
+                                    header nav ul li.sub-menu:before {
+                                        content: '\f078';
+                                        font-family: fontAwesome;
+                                        position: absolute;
+                                        line-height: 50px;
+                                        color: #fff;
+                                        right: 3px;
+                                    }
 
-header nav ul li.active.sub-menu:before {
-  content: '\f077';
-}
+                                    header nav ul li.active.sub-menu:before {
+                                        content: '\f077';
+                                    }
 
-header nav ul li ul {
-  position: absolute;
-  left: 0;
-  background: #333;
-  display: none
-}
+                                    header nav ul li ul {
+                                        position: absolute;
+                                        left: 0;
+                                        background: #333;
+                                        display: none
+                                    }
 
-header nav ul li.active ul {
-  /* use li: hover instead */
-  display: block;
+                                    header nav ul li.active ul {
+                                        /* use li: hover instead */
+                                        display: block;
 
-}
+                                    }
 
-header nav ul li ul li {
-  display: block;
+                                    header nav ul li ul li {
+                                        display: block;
 
-}
+                                    }
 
-header nav ul li a {
-  height: 50px;
-  line-height: 50px;
-  padding: 0 20px;
-  color: #fff;
-  text-decoration: none;
-  display: block;
-    letter-spacing: 5px;
-}
+                                    header nav ul li a {
+                                        height: 50px;
+                                        line-height: 50px;
+                                        padding: 0 20px;
+                                        color: #fff;
+                                        text-decoration: none;
+                                        display: block;
+                                        letter-spacing: 5px;
+                                    }
 
-header nav ul li a:hover {
-  color: #fff;
-  background: #2196f3;
-}
+                                    header nav ul li a:hover {
+                                        color: #fff;
+                                        background: #2196f3;
+                                    }
 
-header nav ul li a.active {
-  background: #2196f3;
-
-
-}
-
-.menu-toggle {
-  color: #fff;
-  float: right;
-    margin-top: 1.3vh;
-  text-align: center;
-  font-size: 24px;
-  cursor: pointer;
-  display: none
-}
- .menu-toggle div {
-    background-color: white;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-                                                    /*NAVIGATION SLUT*/
-                                                    /* ANIMATIONER */
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-                                                    /*FORSIDE SPLASH */
-#forsidesplash {
-
-}
-#splashvideo img{
-    width: 100%;
-}
+                                    header nav ul li a.active {
+                                        background: #2196f3;
 
 
-                    /* FORSIDE HVAD TILBYDER VI */
-#tilbudwrapper {
-    display: flex;
-    flex-direction: column;
+                                    }
 
-    justify-content: center;
-    align-items: center;
+                                    .menu-toggle {
+                                        color: #fff;
+                                        float: right;
+                                        margin-top: 1.3vh;
+                                        text-align: center;
+                                        font-size: 24px;
+                                        cursor: pointer;
+                                        display: none
+                                    }
 
-}
-#tilbud h1 {
-    text-align: center;
-}
-.container {
-  position: relative;
-  width: 75%;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+                                    .menu-toggle div {
+                                        background-color: white;
+                                        width: 25px;
+                                        height: 3px;
+                                        margin: 5px;
+                                        transition: all 0.3s ease;
+                                    }
 
+                                    /*NAVIGATION SLUT*/
+                                    /* ANIMATIONER */
 
+                                    .toggle .line1 {
+                                        transform: rotate(-45deg) translate(-5px, 6px);
+                                    }
 
+                                    .toggle .line2 {
+                                        opacity: 0;
+                                    }
 
-}
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+                                    .toggle .line3 {
+                                        transform: rotate(45deg) translate(-5px, -6px);
+                                    }
 
-}
+                                    /*FORSIDE SPLASH */
+                                    #forsidesplash {}
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  transition: .5s ease;
-  background-color: black;
+                                    #splashvideo img {
+                                        width: 100%;
+                                    }
 
 
-}
-#tilbud p{
-    margin: 2rem 4rem 0rem 4rem;
+                                    /* FORSIDE HVAD TILBYDER VI */
+                                    #tilbudwrapper {
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        justify-content: center;
+                                        align-items: center;
+
+                                    }
+
+                                    #tilbud h1 {
+                                        text-align: center;
+                                    }
+
+                                    .container {
+                                        position: relative;
+                                        width: 75%;
+                                        margin-top: 2rem;
+                                        margin-left: 1rem;
+                                        margin-right: 1rem;
 
 
 
 
-}
-.popup1 {
-    margin-bottom: 0;
-    display: none;
+                                    }
+
+                                    .image {
+                                        display: block;
+                                        width: 100%;
+                                        height: auto;
+
+                                    }
+
+                                    .text {
+                                        color: white;
+                                        font-size: 20px;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        -webkit-transform: translate(-50%, -50%);
+                                        -ms-transform: translate(-50%, -50%);
+                                        transform: translate(-50%, -50%);
+                                        text-align: center;
+                                    }
+
+                                    .container:hover .overlay {
+                                        opacity: 1;
+                                    }
+
+                                    .overlay {
+                                        position: absolute;
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        opacity: 0.5;
+                                        transition: .5s ease;
+                                        background-color: black;
+
+
+                                    }
+
+                                    #tilbud p {
+                                        margin: 2rem 4rem 0rem 4rem;
 
 
 
-}
-.popup2 {
-    margin-bottom: 0;
-    display: none;
+
+                                    }
+
+                                    .popup1 {
+                                        margin-bottom: 0;
+                                        display: none;
 
 
 
-}
-.popup3 {
-    margin-bottom: 0;
-    display: none;
+                                    }
+
+                                    .popup2 {
+                                        margin-bottom: 0;
+                                        display: none;
 
 
 
-}
-.display {
-    display: block;
-}
+                                    }
 
-                                                /*DESKTOP MEDIA QUERY*/
-@media (min-width: 1024px) {
-    header nav ul li.active ul {
-  /* use li: hover instead */
-  display: block;
+                                    .popup3 {
+                                        margin-bottom: 0;
+                                        display: none;
 
 
-}
-    header nav ul li ul li {
-  display: block;
 
-}
+                                    }
+
+                                    .display {
+                                        display: block;
+                                    }
+
+                                    /*DESKTOP MEDIA QUERY*/
+                                    @media (min-width: 1024px) {
+                                        header nav ul li.active ul {
+                                            /* use li: hover instead */
+                                            display: block;
+
+
+                                        }
+
+                                        header nav ul li ul li {
+                                            display: block;
+
+                                        }
+
                                         /*FORSIDE SPLASH*/
-    #forsidesplash {
-    margin-top: 0rem;
-    margin-left: 0;
-        margin-right: 0;
+                                        #forsidesplash {
+                                            margin-top: 0rem;
+                                            margin-left: 0;
+                                            margin-right: 0;
 
-}
-    #splashvideo img{
+                                        }
 
+                                        #splashvideo img {}
 
+                                        /*FORSIDE HVAD TILBYDER VI*/
+                                        #tilbudwrapper {
+                                            display: grid;
+                                            grid-template-rows: 1fr 1fr;
+                                            grid-template-columns: 1fr 1fr 1fr;
 
-}
-                                /*FORSIDE HVAD TILBYDER VI*/
-    #tilbudwrapper {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-left: 4rem;
+                                        }
 
-    justify-content: center;
-    align-items: center;
-   margin-left: 4rem;
-}
-    .overlay {
-        border-radius: 200px;
+                                        .overlay {
+                                            border-radius: 200px;
 
-    }
-    .image {
-        border-radius: 200px;
-    }
-.popup1 {
-    margin-bottom: 0;
-    display:block;
-    opacity: 0;
-    grid-row: 2;
-    grid-column:1;
-    background-color: lightgrey;
+                                        }
 
+                                        .image {
+                                            border-radius: 200px;
+                                        }
 
-
-}
-    .popup2 {
-    margin-bottom: 0;
-    display:block;
-    opacity: 0;
-    grid-row: 2;
-    grid-column:2;
-
-
-}
-    .popup3 {
-    margin-bottom: 0;
-    display:block;
-    opacity: 0;
-    grid-row: 2;
-    grid-column:3;
-
-
-}
-    #tilbud p {
-        margin: 1rem 1rem 1rem 1rem
-    }
-.display {
-    opacity: 1;
-}
-    .container1 {
-        grid-row: 1;
-        grid-column:1;
-    }
-    .container2 {
-        grid-row: 1;
-        grid-column:2;
-    }
-    .container3{
-        grid-row: 1;
-        grid-column: 3;
-    }
-#tilbud h1 {
-    text-align: center;
-}
-.container {
-  position: relative;
-  width: 75%;
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+                                        .popup1 {
+                                            margin-bottom: 0;
+                                            display: block;
+                                            opacity: 0;
+                                            grid-row: 2;
+                                            grid-column: 1;
+                                            background-color: lightgrey;
 
 
 
+                                        }
 
-}
-}
-@media (max-width: 860px) {
-  header {
-    padding: 0 20px;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  header nav {
+                                        .popup2 {
+                                            margin-bottom: 0;
+                                            display: block;
+                                            opacity: 0;
+                                            grid-row: 2;
+                                            grid-column: 2;
 
-    position: absolute;
-    top: 50px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 50px);
-    background: #333;
-    transition: 0.5s;
-  }
-  header nav.active {
-    left: 0;
-  }
-  header nav ul {
-    display: block;
-    text-align: center;
-  }
-  header nav ul li a {
-    border-bottom: 0.9px solid rgba(0, 0, 0, .2);
-  }
-  header nav ul li.active ul {
-    position: relative;
-    background: #003e6f;
 
-  }
-    header nav ul li.sub-menu:before {
-  content: '\f078';
-  font-family: fontAwesome;
-  position: absolute;
-  line-height: 50px;
-  color: #fff;
-  right: 10px;
-}
-  header nav ul li ul li {
-    width: 100%;
-  }
-}
+                                        }
+
+                                        .popup3 {
+                                            margin-bottom: 0;
+                                            display: block;
+                                            opacity: 0;
+                                            grid-row: 2;
+                                            grid-column: 3;
+
+
+                                        }
+
+                                        #tilbud p {
+                                            margin: 1rem 1rem 1rem 1rem
+                                        }
+
+                                        .display {
+                                            opacity: 1;
+                                        }
+
+                                        .container1 {
+                                            grid-row: 1;
+                                            grid-column: 1;
+                                        }
+
+                                        .container2 {
+                                            grid-row: 1;
+                                            grid-column: 2;
+                                        }
+
+                                        .container3 {
+                                            grid-row: 1;
+                                            grid-column: 3;
+                                        }
+
+                                        #tilbud h1 {
+                                            text-align: center;
+                                        }
+
+                                        .container {
+                                            position: relative;
+                                            width: 75%;
+                                            margin-top: 2rem;
+                                            margin-left: 1rem;
+                                            margin-right: 1rem;
+
+
+
+
+                                        }
+                                    }
+
+                                    @media (max-width: 860px) {
+                                        header {
+                                            padding: 0 20px;
+                                        }
+
+                                        .menu-toggle {
+                                            display: block;
+                                        }
+
+                                        header nav {
+
+                                            position: absolute;
+                                            top: 50px;
+                                            left: -100%;
+                                            width: 100%;
+                                            height: calc(100vh - 50px);
+                                            background: #333;
+                                            transition: 0.5s;
+                                        }
+
+                                        header nav.active {
+                                            left: 0;
+                                        }
+
+                                        header nav ul {
+                                            display: block;
+                                            text-align: center;
+                                        }
+
+                                        header nav ul li a {
+                                            border-bottom: 0.9px solid rgba(0, 0, 0, .2);
+                                        }
+
+                                        header nav ul li.active ul {
+                                            position: relative;
+                                            background: #003e6f;
+
+                                        }
+
+                                        header nav ul li.sub-menu:before {
+                                            content: '\f078';
+                                            font-family: fontAwesome;
+                                            position: absolute;
+                                            line-height: 50px;
+                                            color: #fff;
+                                            right: 10px;
+                                        }
+
+                                        header nav ul li ul li {
+                                            width: 100%;
+                                        }
+                                    }
+
+
+
+
+                                    /* FOOTER */
+
+
+                                    footer {
+                                        background-color: black;
+                                        color: white;
+                                        height: 8em;
+                                    }
+
+                                    .footer_left {
+                                        text-align: left;
+                                        float: left;
+                                        padding-left: 1.5em;
+                                    }
+
+                                    .footer_right {
+                                        float: right;
+                                        text-align: right;
+                                        padding-right: 1.5em;
+                                    }
+
+                                    .footer_centered {
+                                        display: inline-block;
+                                        padding-top: 0.015em;
+                                        text-align: left;
+                                    }
+
+
+                                    .centerparent {
+                                        text-align: center;
+                                    }
+
+                                    .kontaktlink {
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+
+                                    .kontaktlink:hover {
+                                        color: limegreen;
+                                        transition: 0.5s;
+                                    }
