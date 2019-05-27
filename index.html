@@ -1,146 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navbar</title>
+    <title>Velkommen til Frolov & Savova Smykkekunst!</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
 
-  <body>
+<body>
 
     <header>
-      <div class="logo">FROLOV </div>
-      <nav>
-        <ul>
-          <li><a href="#">FORSIDE</a></li>
-
-          <li class="sub-menu"><a href="#">SMYKKER</a>
+        <div class="logo">FROLOV & SAVOVA</div>
+        <nav>
             <ul>
-              <li><a href="#">BESTILLINGSARBEJDE</a></li>
-              <li><a href="#">RINGE</a></li>
-              <li><a href="#">VIELSESRINGE</a></li>
-              <li><a href="#">VEDHÆNG</a></li>
-              <li><a href="#">ØRERINGE</a></li>
-              <li><a href="#">HERRE</a></li>
-              <li><a href="#">KONFIRMATIONSGAVER</a></li>
+                <li><a href="index.html">FORSIDE</a></li>
+
+                <li class="sub-menu"><a href="smykker.html">SMYKKER</a>
+                    <ul>
+                        <li><a href="bestillingsarbejde.html">BESTILLINGSARBEJDE</a></li>
+                        <li><a href="ringe.html">RINGE</a></li>
+                        <li><a href="vedhaeng.html">VEDHÆNG</a></li>
+                        <li><a href="oereringe.html">ØRERINGE</a></li>
+                        <li><a href="koebenhavnersmykker.html">KØBENHAVNERSMYKKER</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">OM OS</a>
+                    <ul>
+                        <li>
+                            <a href="#">UDSTILLINGER</a>
+                        </li>
+                        <li>
+                            <a href="#">INSPIRATION</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li><a href="#">KONTAKT</a></li>
+
             </ul>
-          </li>
+        </nav>
+        <div class="menu-toggle">
 
-          <li class="sub-menu"><a href="#">OM OS</a>
-            <ul>
-              <li>
-                <a href="#">UDSTILLINGER</a>
-              </li>
-              <li>
-                <a href="#">INSPIRATION</a>
-              </li>
-
-            </ul>
-          </li>
-          <li><a href="#">KONTAKT</a></li>
-
-        </ul>
-      </nav>
-      <div class="menu-toggle">
-
-        <div class="line1"></div>
-       <div class="line2"></div>
-       <div class="line3"></div>
-      </div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </header>
-    <section id="forsidesplash">
-        <div id="splashvideo">
-            <video src="video/splash.mp4" controls autoplay width="100%"></video>
+
+    <main>
+        <section id="forsidesplash">
+            <div id="splashvideo">
+                <video src="video/splash.mp4" controls autoplay width="100%"></video>
+            </div>
+
+
+        </section>
+
+        <section id="tilbud">
+            <h1>Det tilbyder vi</h1>
+            <div id="tilbudwrapper">
+                <div class="container container1">
+                    <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">SPECIALDESIGN</div>
+                    </div>
+                </div>
+                <div class="popup1">
+                    <p>SPECIALDESIGN IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+                    </p>
+
+
+                </div>
+                <div class="container container2">
+                    <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">OMSMELTNING</div>
+                    </div>
+                </div>
+                <div class="popup2">
+                    <p>OMSMELTNING IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+                    </p>
+
+
+                </div>
+
+                <div class="container container3">
+                    <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">KATALOG</div>
+                    </div>
+                </div>
+                <div class="popup3">
+                    <p>PREDEFINERET IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+                    </p>
+
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer_left">
+            <p><strong>Frolov & Savova Smykkekunst</strong><br>Nørre Farimagsgade 70<br>1364 København K<br><a class="kontaktlink" href="tel:+4528111741">+45 28111741</a>
+                <br><a class="kontaktlink" href="mailto: ptossip@gmail.com">ptossip@gmail.com</a></p>
         </div>
-
-
-    </section>
-
-    <section id="tilbud">
-       <h1>Det tilbyder vi</h1>
-        <div id="tilbudwrapper">
-            <div class="container container1">
-  <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">SPECIALDESIGN</div>
-  </div>
-</div>
-      <div class="popup1">
-      <p>SPECIALDESIGN IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
-      </p>
-
-
-      </div>
-       <div class="container container2">
-  <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">OMSMELTNING</div>
-  </div>
-</div>
-     <div class="popup2">
-      <p>OMSMELTNING IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
-      </p>
-
-
-      </div>
-
-       <div class="container container3">
-  <img src="img/ringpackshot.jpg" alt="Avatar" class="image">
-  <div class="overlay">
-    <div class="text">PREDEFINERET</div>
-  </div>
-</div>
-        <div class="popup3">
-      <p>PREDEFINERET IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
-      </p>
-
-
-      </div>
+        <div class="footer_right">
+            <p>SoMe-icons</p>
         </div>
+        <div class="centerparent">
+            <div class="footer_centered">
+                <p class="footer_centered">
+                    <strong>Åbningstider</strong>
+                    <br>Tirsdag-Fredag: 10:00-17:30
+                    <br>Lørdag: 13:00-16:00
+                    <br>Søndag-Mandag: Efter aftale</p>
+            </div>
+        </div>
+    </footer>
 
-    </section>
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(
-        function() {
-          $('.menu-toggle').click(function() {
-            $('nav').toggleClass('active')
-              document.querySelector(".menu-toggle").classList.toggle("toggle");
-          })
-
-          $('ul li').click(function(toggleBurger) {
-            $(this).siblings().removeClass('active');
-            $(this).toggleClass('active');
-
-          })
-
-        }
-      )
-
-        document.querySelector(".container1").addEventListener("click", popUps);
-       document.querySelector(".container2").addEventListener("click", popUps2);
-        document.querySelector(".container3").addEventListener("click", popUps3);
-
-        function popUps (){
-            console.log("AKTIV")
-            document.querySelector(".popup1").classList.toggle("display");
-        }
-        function popUps2 (){
-            console.log("AKTIV")
-            document.querySelector(".popup2").classList.toggle("display");
-        }
-        function popUps3 (){
-            console.log("AKTIV")
-            document.querySelector(".popup3").classList.toggle("display");
-        }
-    </script>
-
-  </body>
+</body>
 
 </html>
