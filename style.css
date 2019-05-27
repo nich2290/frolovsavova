@@ -276,6 +276,7 @@
                                             justify-content: center;
                                             align-items: center;
                                             margin-left: 4rem;
+                                            margin-right: 4rem;
                                         }
 
                                         .overlay {
@@ -294,6 +295,8 @@
                                             grid-row: 2;
                                             grid-column: 1;
                                             background-color: lightgrey;
+                                            margin: 1rem;
+                                            line-height: 1.5rem;
 
 
 
@@ -305,6 +308,9 @@
                                             opacity: 0;
                                             grid-row: 2;
                                             grid-column: 2;
+                                            background-color: lightgrey;
+                                            margin: 1rem;
+                                            line-height: 1.5rem;
 
 
                                         }
@@ -315,6 +321,9 @@
                                             opacity: 0;
                                             grid-row: 2;
                                             grid-column: 3;
+                                            background-color: lightgrey;
+                                            margin: 1rem;
+                                            line-height: 1.5rem;
 
 
                                         }
