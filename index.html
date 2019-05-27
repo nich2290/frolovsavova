@@ -14,8 +14,8 @@
 
 <body>
 
-    <header>
-        <div class="logo">FROLOV & SAVOVA</div>
+    <header class="navbar">
+        <div class="logo"> <a href="index.html">FROLOV & SAVOVA</a></div>
         <nav>
             <ul>
                 <li><a href="index.html">FORSIDE</a></li>
@@ -126,25 +126,27 @@
             </div>
         </div>
     </footer>
-<script>
-    document.querySelector(".container1").addEventListener("click", popUps);
-document.querySelector(".container2").addEventListener("click", popUps2);
-document.querySelector(".container3").addEventListener("click", popUps3);
+    <script>
+        document.querySelector(".container1").addEventListener("click", popUps);
+        document.querySelector(".container2").addEventListener("click", popUps2);
+        document.querySelector(".container3").addEventListener("click", popUps3);
 
-function popUps() {
-    console.log("AKTIV")
-    document.querySelector(".popup1").classList.toggle("display");
-}
+        function popUps() {
+            console.log("AKTIV")
+            document.querySelector(".popup1").classList.toggle("display");
+        }
 
-function popUps2() {
-    console.log("AKTIV")
-    document.querySelector(".popup2").classList.toggle("display");
-}
+        function popUps2() {
+            console.log("AKTIV")
+            document.querySelector(".popup2").classList.toggle("display");
+        }
 
-function popUps3() {
-    console.log("AKTIV")
-    document.querySelector(".popup3").classList.toggle("display");
-}</script>
+        function popUps3() {
+            console.log("AKTIV")
+            document.querySelector(".popup3").classList.toggle("display");
+        }
+
+    </script>
 </body>
 
 </html>
