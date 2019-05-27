@@ -33,7 +33,15 @@
                                         font-size: 24px;
                                         float: left;
                                         font-weight: bold;
+
                                     }
+                                    .logo img {
+                                        width: 20%;
+                                    }
+.logo {
+    max-width: 500px;
+}
+
 
                                     .logo a {
                                         text-decoration: none;
