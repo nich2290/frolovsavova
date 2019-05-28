@@ -14,7 +14,9 @@ a {
 }
 
 
-
+h1 {
+    font-size: 1.4em;
+}
 
 
 
@@ -340,7 +342,11 @@ header nav ul li a.active {
 
 /********** iPAD MEDIA QUERY **********/
 
-@media (min-width: 860px) {
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 3em;
+    }
 
     /*Smykker Galleri*/
     .posts {
@@ -622,4 +628,13 @@ footer p {
 .kontaktlink:hover {
     color: #8DB097;
     transition: 0.5s;
+}
+
+.some_facebook {
+    width: 1.7em;
+    padding-top: 1.2em;
+}
+
+.some_instagram {
+    width: 1.7em;
 }
