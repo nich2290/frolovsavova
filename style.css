@@ -335,6 +335,24 @@ header nav ul li a.active {
 
 
 
+/************ OM OS *******************/
+.posts-om-os {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5rem;
+    }
+
+    .post-om-os {
+
+        padding: 1rem;
+        border: 0.5px solid lightgrey;
+        margin: 2rem;
+        background-color: #FFFFFF;
+    }
+.post-om-os img {
+    width: 100%;
+}
 
 
 
