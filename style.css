@@ -330,6 +330,16 @@ header nav ul li a.active {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+/********** iPAD MEDIA QUERY **********/
+
 @media (min-width: 860px) {
 
     /*Smykker Galleri*/
