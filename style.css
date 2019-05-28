@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url(img/testbg.jpeg);
+    background-color: #F2EBDC;
     background-attachment: fixed;
     background-position: center;
 
@@ -16,6 +16,7 @@ a {
 
 h1 {
     font-size: 1.4em;
+    color: #262120;
 }
 
 
@@ -153,7 +154,7 @@ header nav ul li a.active {
 
 
 .solid {
-    background-color: #B09E9E;
+    background-color: #D9A441;
 }
 
 /*NAVIGATION SLUT*/
@@ -260,7 +261,7 @@ header nav ul li a.active {
     width: 100%;
     opacity: 0.5;
     transition: .5s ease;
-    background-color: black;
+    background-color: #262120;
 
 
 }
@@ -339,19 +340,20 @@ header nav ul li a.active {
 
 /************ OM OS *******************/
 .posts-om-os {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 5rem;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 5rem;
+}
 
-    .post-om-os {
+.post-om-os {
 
-        padding: 1rem;
-        border: 0.5px solid lightgrey;
-        margin: 2rem;
-        background-color: #FFFFFF;
-    }
+    padding: 1rem;
+    border: 0.5px solid lightgrey;
+    margin: 2rem;
+    background-color: #FFFFFF;
+}
+
 .post-om-os img {
     width: 100%;
 }
@@ -605,7 +607,7 @@ header nav ul li a.active {
 
 
 footer {
-    background-color: #B09E9E;
+    background-color: #D9A441;
     color: #FFFFFF;
     height: 4em;
     margin-top: 1em;
