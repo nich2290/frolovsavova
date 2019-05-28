@@ -340,10 +340,8 @@ header nav ul li a.active {
 
 /************ OM OS *******************/
 .posts-om-os {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 5rem;
+    margin: 3rem;
+    margin-top: 4rem;
 }
 
 .post-om-os {
@@ -356,6 +354,18 @@ header nav ul li a.active {
 
 .post-om-os img {
     width: 100%;
+}
+
+
+.kunstnere-content {
+    margin: 3rem;
+    margin-top: 5rem;
+    background-color: white;
+
+}
+
+.kunstnere-content h1 {
+    text-align: center;
 }
 
 
@@ -540,6 +550,34 @@ header nav ul li a.active {
 
     .post h2 {
         text-align: center;
+    }
+
+    /***********OM OS*************/
+    .posts-om-os {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5rem;
+    }
+
+    .post-om-os {
+
+        padding: 1rem;
+        border: 0.5px solid lightgrey;
+        margin: 2rem;
+        background-color: #FFFFFF;
+    }
+
+    .post-om-os img {
+        width: 100%;
+    }
+
+
+    .kunstnere-content {
+        margin: 5rem;
+        background-color: white;
+
+
     }
 }
 
