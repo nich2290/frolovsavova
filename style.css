@@ -3,7 +3,7 @@
                                         margin: 0;
                                         padding: 0;
                                         font-family: sans-serif;
-                                        background-color: #FFFAF0;
+                                        background-image: url(img/testbg.jpeg);
                                         background-attachment: fixed;
                                         background-position: center;
                                     }
@@ -27,24 +27,26 @@
                                     }
 
                                     header .logo {
-                                        color: #fff;
+                                        color: #FFFFFF;
                                         height: 50px;
                                         line-height: 50px;
                                         float: left;
                                         font-weight: bold;
 
                                     }
+
                                     .logo img {
                                         width: 20%;
                                     }
-.logo {
-    max-width: 500px;
-}
+
+                                    .logo {
+                                        max-width: 500px;
+                                    }
 
 
                                     .logo a {
                                         text-decoration: none;
-                                        color: white;
+                                        color: #FFFFFF;
                                         font-size: 0.6em;
                                     }
 
@@ -69,7 +71,7 @@
                                         font-family: fontAwesome;
                                         position: absolute;
                                         line-height: 50px;
-                                        color: #fff;
+                                        color: #FFFFFF;
                                         right: 3px;
                                     }
 
@@ -99,14 +101,14 @@
                                         height: 50px;
                                         line-height: 50px;
                                         padding: 0 20px;
-                                        color: #fff;
+                                        color: #FFFFFF;
                                         text-decoration: none;
                                         display: block;
                                         letter-spacing: 5px;
                                     }
 
                                     header nav ul li a:hover {
-                                        color: #fff;
+                                        color: #FFFFFF;
                                         background: #2196f3;
                                     }
 
@@ -117,7 +119,7 @@
                                     }
 
                                     .menu-toggle {
-                                        color: #fff;
+                                        color: #FFFFFF;
                                         float: right;
                                         margin-top: 1.3vh;
                                         text-align: center;
@@ -127,7 +129,7 @@
                                     }
 
                                     .menu-toggle div {
-                                        background-color: white;
+                                        background-color: #FFFFFF;
                                         width: 25px;
                                         height: 3px;
                                         margin: 5px;
@@ -141,7 +143,7 @@
 
 
                                     .solid {
-                                        background-color: rgba(48, 65, 93, 0.9);
+                                        background-color: #B09E9E;
                                     }
 
                                     /*NAVIGATION SLUT*/
@@ -201,7 +203,7 @@
                                     }
 
                                     .text {
-                                        color: white;
+                                        color: #FFFFFF;
                                         font-size: 20px;
                                         position: absolute;
                                         top: 50%;
@@ -269,43 +271,51 @@
 
                                     /*SMYKKER GALLERI */
 
-.post img{
-    width: 100%;
-}
-                                        .posts {
+                                    .post img {
+                                        width: 100%;
+                                    }
 
-                                            margin: 3rem;
-                                            margin-top: 5rem;
-                                        }
-                                        .post {
+                                    .posts {
 
-                                            padding: 1rem;
-                                            border: 0.5px solid lightgrey;
-                                            margin: 0.5rem;
-                                            background-color: white;
-                                        }
-                                        .post h2 {
-                                            text-align: center;
-                                        }
-                                        @media (min-width: 860px) {
+                                        margin: 3rem;
+                                        margin-top: 5rem;
+                                    }
+
+                                    .post {
+
+                                        padding: 1rem;
+                                        border: 0.5px solid lightgrey;
+                                        margin: 0.5rem;
+                                        background-color: #FFFFFF;
+                                    }
+
+                                    .post h2 {
+                                        text-align: center;
+                                    }
+
+                                    @media (min-width: 860px) {
+
                                         /*Smykker Galleri*/
-                                      .posts {
+                                        .posts {
                                             display: grid;
                                             grid-template-columns: 1fr 1fr;
                                             grid-template-rows: 1fr 1fr;
                                             margin: 5rem;
                                         }
+
                                         .post {
 
                                             padding: 1rem;
                                             border: 0.5px solid lightgrey;
                                             margin: 0.5rem;
-                                            background-color: white;
+                                            background-color: #FFFFFF;
                                         }
+
                                         .post h2 {
                                             text-align: center;
                                         }
-}
+                                    }
+
                                     /*DESKTOP MEDIA QUERY*/
                                     @media (min-width: 1024px) {
                                         header nav ul li.active ul {
@@ -429,6 +439,7 @@
 
 
                                         }
+
                                         /*SMYKKER GALLERI*/
 
                                         .posts {
@@ -437,13 +448,15 @@
                                             grid-template-rows: 1fr 1fr;
                                             margin: 5rem;
                                         }
+
                                         .post {
 
                                             padding: 1rem;
                                             border: 0.5px solid lightgrey;
                                             margin: 0.5rem;
-                                            background-color: white;
+                                            background-color: #FFFFFF;
                                         }
+
                                         .post h2 {
                                             text-align: center;
                                         }
@@ -493,7 +506,7 @@
                                             font-family: fontAwesome;
                                             position: absolute;
                                             line-height: 50px;
-                                            color: #fff;
+                                            color: #FFFFFF;
                                             right: 10px;
                                         }
 
@@ -509,8 +522,8 @@
 
 
                                     footer {
-                                        background-color: black;
-                                        color: white;
+                                        background-color: #B09E9E;
+                                        color: #FFFFFF;
                                         height: 4em;
                                         margin-top: 1em;
                                     }
@@ -544,10 +557,10 @@
 
                                     .kontaktlink {
                                         text-decoration: none;
-                                        color: white;
+                                        color: #FFFFFF;
                                     }
 
                                     .kontaktlink:hover {
-                                        color: limegreen;
+                                        color: #8DB097;
                                         transition: 0.5s;
                                     }
