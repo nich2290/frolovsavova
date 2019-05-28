@@ -13,6 +13,13 @@ a {
     /* color: white; */
 }
 
+
+
+
+
+
+
+
 /**********NAVIGATION ***********/
 header {
     position: fixed;
@@ -148,7 +155,16 @@ header nav ul li a.active {
 }
 
 /*NAVIGATION SLUT*/
-/* ANIMATIONER */
+
+
+
+
+
+
+
+
+
+/********** ANIMATIONER **********/
 
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -162,7 +178,14 @@ header nav ul li a.active {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/*FORSIDE SPLASH */
+
+
+
+
+
+
+
+/********** FORSIDE SPLASH **********/
 #forsidesplash {}
 
 #splashvideo img {
@@ -170,7 +193,13 @@ header nav ul li a.active {
 }
 
 
-/* FORSIDE HVAD TILBYDER VI */
+
+
+
+
+
+
+/********** FORSIDE HVAD TILBYDER VI **********/
 #tilbudwrapper {
     display: flex;
     flex-direction: column;
@@ -270,7 +299,14 @@ header nav ul li a.active {
     display: block;
 }
 
-/*SMYKKER GALLERI */
+
+
+
+
+
+
+
+/**********SMYKKER GALLERI **********/
 
 .post img {
     width: 100%;
@@ -317,7 +353,15 @@ header nav ul li a.active {
     }
 }
 
-/*DESKTOP MEDIA QUERY*/
+
+
+
+
+
+
+
+
+/********** DESKTOP MEDIA QUERY **********/
 @media (min-width: 1024px) {
     header nav ul li.active ul {
         /* use li: hover instead */
@@ -519,7 +563,11 @@ header nav ul li a.active {
 
 
 
-/* FOOTER */
+
+
+
+
+/********** FOOTER **********/
 
 
 footer {
