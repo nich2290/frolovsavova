@@ -272,7 +272,40 @@
 .post img{
     width: 100%;
 }
+                                        .posts {
 
+                                            margin: 3rem;
+                                            margin-top: 5rem;
+                                        }
+                                        .post {
+
+                                            padding: 1rem;
+                                            border: 0.5px solid lightgrey;
+                                            margin: 0.5rem;
+                                            background-color: white;
+                                        }
+                                        .post h2 {
+                                            text-align: center;
+                                        }
+                                        @media (min-width: 860px) {
+                                        /*Smykker Galleri*/
+                                      .posts {
+                                            display: grid;
+                                            grid-template-columns: 1fr 1fr;
+                                            grid-template-rows: 1fr 1fr;
+                                            margin: 5rem;
+                                        }
+                                        .post {
+
+                                            padding: 1rem;
+                                            border: 0.5px solid lightgrey;
+                                            margin: 0.5rem;
+                                            background-color: white;
+                                        }
+                                        .post h2 {
+                                            text-align: center;
+                                        }
+}
                                     /*DESKTOP MEDIA QUERY*/
                                     @media (min-width: 1024px) {
                                         header nav ul li.active ul {
