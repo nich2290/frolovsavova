@@ -423,9 +423,9 @@ header nav ul li a.active {
 
     /*FORSIDE SPLASH*/
     #forsidesplash {
-        margin-top: 0rem;
-        margin-left: 0;
-        margin-right: 0;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
 
     }
 
@@ -437,8 +437,8 @@ header nav ul li a.active {
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
 
-        justify-content: center;
-        align-items: center;
+
+        justify-items: center;
         margin-left: 4rem;
         margin-right: 4rem;
     }
