@@ -154,7 +154,8 @@ header nav ul li a.active {
 
 
 .solid {
-    background-color: #D9A441;
+    background-color: rgba(217, 164, 65, 0.9);
+    ;
 }
 
 /*NAVIGATION SLUT*/
@@ -345,7 +346,6 @@ header nav ul li a.active {
 }
 
 .post-om-os {
-
     padding: 1rem;
     border: 0.5px solid lightgrey;
     margin: 2rem;
