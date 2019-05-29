@@ -20,13 +20,6 @@
         background-color: rgba(48, 65, 93, 0.9);
     }
 
-
-        .skjul {
-            display: none;
-        }
-
-
-
     </style>
 <body>
 
@@ -76,26 +69,33 @@
             <div class="line3"></div>
         </div>
     </header>
-     <div id="popup" class="skjul">
-        <div id="luk">
-            <button>X</button>
+
+    <section class="kunstnere">
+
+        <div class="kunstnere-content">
+            <h1 class="title"></h1>
+            <p class="underrubrik"></p>
+            <p class="brodtekst1"></p>
+            <p class="brodtekst2"></p>
         </div>
-        <div id="indhold"></div>
-    </div>
-   <main class="posts"></main>
+
+
+    </section>
+   <main class="posts-om-os"></main>
 
 
 
             <template>
 
-        <section class="post">
-           <h2></h2>
+        <section class="post-om-os">
+
             <div>
                 <img class="billede">
             </div>
             <div>
-                <p class="kort"></p>
-                <p class="pris"></p>
+               <h3 class="navn"></h3>
+                <p class="beskrivelse"></p>
+
             </div>
 
         </section>
@@ -115,6 +115,7 @@
         </div>
         <div class="centerparent">
             <div class="footer_centered">
+
                 <p class="footer_centered">
                     <strong>Åbningstider</strong>
                     <br>Tirsdag-Fredag: 10:00-17:30
@@ -126,19 +127,23 @@
 
      <script>
         let indhold;
+        let indhold2;
         document.addEventListener("DOMContentLoaded", hentJson);
         //Henter JSON fil i asynkron function.
 
         async function hentJson() {
             console.log("Henter json");
             // Fortæller os om async functionen bliver loaded
-            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/bestillingsarbejde";
+            const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/kunstnere";
+            const url2 ="http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/om_os/178";
             //Er en konstabel der retter mod den "page" eller "post" på back-enden (wordpress) som vi gerne vil arbejde med
 
             // Henter data filen
             const myJson = await fetch(url);
+            const myJson2 = await fetch (url2);
             // den hentede data skal tolkes som json
             indhold = await myJson.json();
+            indhold2 = await myJson2.json();
             //Kalder funktion der viser data i DOM
 
             visIndhold();
@@ -149,7 +154,7 @@
         function visIndhold() {
 
             //Destinationen for hvor vi vil have indholdet hen
-            let dest = document.querySelector(".posts");
+            let dest = document.querySelector(".posts-om-os");
             //Template i destinationen, som danner opbygningen af det aktuelle post, i html.
             let temp = document.querySelector("template");
 
@@ -159,39 +164,21 @@
                 //cloneNode skaber en kopi af "template".
                 let klon = temp.cloneNode(true).content;
                 console.log(post.billede);
-                klon.querySelector("h2").innerHTML = post.title.rendered;
+
                 klon.querySelector("img").src = post.billede.guid;
-                klon.querySelector(".pris").innerHTML = post.pris;
-                klon.querySelector(".kort").innerHTML = post.beskrivelse;
+                klon.querySelector("h3").innerHTML = post.title.rendered;
+                klon.querySelector(".beskrivelse").innerHTML = post.beskrivelse;
+
                 //Sender klonen retur til vores destination "posts" og processen gentages.
                 dest.appendChild(klon);
 
-                dest.lastElementChild.addEventListener("click", () => {
-                        visSingle(post);
-                    });
 
-                function visSingle(post) {
-                        document.querySelector("#indhold").innerHTML = `
-                            <article class="singleret">
-                                <h2>${post.title.rendered}</h2>
-                                <img src="${post.billede.guid}">
-                                <p>Beskrivelse: ${post.beskrivelse}</p>
-
-
-
-                                </article>
-                        `;
-                        document.querySelector("#popup").style.display = "block";
-                        document.querySelector("#popup #luk").addEventListener("click", close);
-                        document.querySelector("body").style.overflow = "hidden";
-                    }
-
-                    function close() {
-                        document.querySelector("#popup").style.display = "none";
-                        document.querySelector("body").style.overflow = "scroll";
-                    }
 
             })
+                document.querySelector("h1").textContent = indhold2.title.rendered;
+                document.querySelector(".underrubrik").textContent = indhold2.underrubrik;
+                document.querySelector(".brodtekst1").textContent = indhold2.brodtekst1;
+            document.querySelector(".brodtekst2").textContent = indhold2.brodtekst2;
 
 
 

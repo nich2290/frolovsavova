@@ -70,6 +70,18 @@
         </div>
     </header>
 
+    <section class="kunstnere">
+
+        <div class="kunstnere-content">
+            <h1 class="title"></h1>
+            <p class="underrubrik"></p>
+            <p class="brodtekst1"></p>
+            <p class="brodtekst2"></p>
+            <p class="brodtekst3"></p>
+        </div>
+
+
+    </section>
    <main class="posts-om-os"></main>
 
 
@@ -83,7 +95,10 @@
             </div>
             <div>
                <h3 class="navn"></h3>
+               <p class="rubrik"></p>
+               <div class="underline"></div>
                 <p class="beskrivelse"></p>
+                <p class="beskrivelse2"></p>
 
             </div>
 
@@ -104,6 +119,7 @@
         </div>
         <div class="centerparent">
             <div class="footer_centered">
+
                 <p class="footer_centered">
                     <strong>Åbningstider</strong>
                     <br>Tirsdag-Fredag: 10:00-17:30
@@ -115,6 +131,7 @@
 
      <script>
         let indhold;
+        let indhold2;
         document.addEventListener("DOMContentLoaded", hentJson);
         //Henter JSON fil i asynkron function.
 
@@ -122,12 +139,15 @@
             console.log("Henter json");
             // Fortæller os om async functionen bliver loaded
             const url = "http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/kunstnere";
+            const url2 ="http://nicklasgrafisk.dk/kea/frolovapi/wordpress/wp-json/wp/v2/om_os/178";
             //Er en konstabel der retter mod den "page" eller "post" på back-enden (wordpress) som vi gerne vil arbejde med
 
             // Henter data filen
             const myJson = await fetch(url);
+            const myJson2 = await fetch (url2);
             // den hentede data skal tolkes som json
             indhold = await myJson.json();
+            indhold2 = await myJson2.json();
             //Kalder funktion der viser data i DOM
 
             visIndhold();
@@ -151,7 +171,9 @@
 
                 klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector("h3").innerHTML = post.title.rendered;
-                klon.querySelector(".beskrivelse").innerHTML = post.beskrivelse;
+                klon.querySelector(".rubrik").innerHTML = post.rubrik;
+                klon.querySelector(".beskrivelse").innerHTML = post.brodtekst1;
+                klon.querySelector(".beskrivelse2").innerHTML = post.brodtekst3;
 
                 //Sender klonen retur til vores destination "posts" og processen gentages.
                 dest.appendChild(klon);
@@ -159,6 +181,11 @@
 
 
             })
+                document.querySelector("h1").textContent = indhold2.title.rendered;
+                document.querySelector(".underrubrik").textContent = indhold2.underrubrik;
+                document.querySelector(".brodtekst1").textContent = indhold2.brodtekst1;
+                document.querySelector(".brodtekst2").textContent = indhold2.brodtekst2;
+                document.querySelector(".brodtekst3").textContent = indhold2.brodtekst3;
 
 
 
