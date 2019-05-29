@@ -120,11 +120,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #FFFFFF;
-    background: #2196f3;
+    background: #262120;
 }
 
 header nav ul li a.active {
-    background: #2196f3;
+    background: #262120;
 
 
 }
@@ -360,7 +360,7 @@ header nav ul li a.active {
 .kunstnere-content {
     margin: 3rem;
     margin-top: 5rem;
-    background-color: white;
+    background-color: #FFFFFF;
 
 }
 
@@ -575,7 +575,7 @@ header nav ul li a.active {
 
     .kunstnere-content {
         margin: 5rem;
-        background-color: white;
+        background-color: #FFFFFF;
 
 
     }
