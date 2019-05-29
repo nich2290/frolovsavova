@@ -77,6 +77,7 @@
             <p class="underrubrik"></p>
             <p class="brodtekst1"></p>
             <p class="brodtekst2"></p>
+            <p class="brodtekst3"></p>
         </div>
 
 
@@ -94,7 +95,10 @@
             </div>
             <div>
                <h3 class="navn"></h3>
+               <p class="rubrik"></p>
+               <div class="underline"></div>
                 <p class="beskrivelse"></p>
+                <p class="beskrivelse2"></p>
 
             </div>
 
@@ -167,7 +171,9 @@
 
                 klon.querySelector("img").src = post.billede.guid;
                 klon.querySelector("h3").innerHTML = post.title.rendered;
-                klon.querySelector(".beskrivelse").innerHTML = post.beskrivelse;
+                klon.querySelector(".rubrik").innerHTML = post.rubrik;
+                klon.querySelector(".beskrivelse").innerHTML = post.brodtekst1;
+                klon.querySelector(".beskrivelse2").innerHTML = post.brodtekst3;
 
                 //Sender klonen retur til vores destination "posts" og processen gentages.
                 dest.appendChild(klon);
@@ -178,7 +184,8 @@
                 document.querySelector("h1").textContent = indhold2.title.rendered;
                 document.querySelector(".underrubrik").textContent = indhold2.underrubrik;
                 document.querySelector(".brodtekst1").textContent = indhold2.brodtekst1;
-            document.querySelector(".brodtekst2").textContent = indhold2.brodtekst2;
+                document.querySelector(".brodtekst2").textContent = indhold2.brodtekst2;
+                document.querySelector(".brodtekst3").textContent = indhold2.brodtekst3;
 
 
 

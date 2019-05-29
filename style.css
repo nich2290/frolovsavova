@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #F2EBDC;
+    /*background-color: #F2EBDC;*/
     background-attachment: fixed;
 
     background-position: center;
@@ -191,7 +191,7 @@ header nav ul li a.active {
 
 
 /********** FORSIDE SPLASH **********/
-#forsidesplash {}
+
 
 #splashvideo img {
     width: 100%;
@@ -348,9 +348,55 @@ header nav ul li a.active {
 }
 
 
+/************ SINGLE VIEW*************/
+        #popup {
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            overflow: scroll;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.71);
 
 
 
+        }
+
+
+        .singleret img {
+            max-width: 100%;
+        }
+
+        .singleret {
+            padding: 1rem;
+
+
+        }
+
+        .skjul {
+            display: none;
+        }
+
+        #indhold {
+            min-height: 61vh;
+            background-color: white;
+            width: 77vw;
+            margin: 4rem auto;
+            border: 1px solid black;
+        }
+    .singleret img {
+            max-width: 50%;
+        }
+
+        .singleret {
+            padding: 1rem;
+
+
+        }
+
+#luk button {
+    width: 10vw
+}
 
 /************ OM OS *******************/
 .posts-om-os {
@@ -677,6 +723,11 @@ header nav ul li a.active {
     .kunstnere-content h1 {
     text-align: center;
 }
+    .underline {
+        height: 2px;
+        width: 500px;
+        background-color: black;
+    }
 }
 
 @media (max-width: 860px) {
