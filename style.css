@@ -121,11 +121,11 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #FFFFFF;
-    background: #2196f3;
+    background: #262120;
 }
 
 header nav ul li a.active {
-    background: #2196f3;
+    background: #262120;
 
 
 }
@@ -419,7 +419,7 @@ header nav ul li a.active {
 .kunstnere-content {
     margin: 3rem;
     margin-top: 5rem;
-
+    background-color: #FFFFFF;
 
 }
 
@@ -436,8 +436,9 @@ header nav ul li a.active {
     h1 {
         font-size: 3em;
     }
+
     /* TILBUD FORSIDE */
-     #tilbudwrapper {
+    #tilbudwrapper {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -447,7 +448,8 @@ header nav ul li a.active {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-     .popup1 {
+
+    .popup1 {
         margin-bottom: 0;
         display: block;
         opacity: 0;
@@ -513,6 +515,7 @@ header nav ul li a.active {
         grid-row: 1;
         grid-column: 3;
     }
+
     /*Smykker Galleri*/
     .posts {
         display: grid;
@@ -694,8 +697,7 @@ header nav ul li a.active {
     .posts-om-os {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr
-        margin: 5rem;
+        grid-template-rows: 1fr margin: 5rem;
         margin-top: 0;
     }
 
@@ -715,18 +717,25 @@ header nav ul li a.active {
 
     .kunstnere-content {
         margin: 5rem;
+
+        background-color: #FFFFFF;
+
         margin-bottom: 0rem;
 
 
-
     }
+
     .kunstnere-content h1 {
+<<<<<<< HEAD
     text-align: center;
 }
     .underline {
         height: 2px;
         width: 500px;
         background-color: black;
+=======
+        text-align: center;
+>>>>>>> frolovsavova/master
     }
 }
 
